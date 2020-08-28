@@ -49,7 +49,7 @@ export const FirebaseModel: any = types
 				} else {
 					// New object, create a new entry
 
-					const response = _getDatabase().push(_getSnapshot());
+					const response = _getDatabase().push()
 					const key = response.key;
 
 					if (key !== null) {
@@ -57,7 +57,7 @@ export const FirebaseModel: any = types
 					}
 
 					const retPromise = new Promise((resolve, reject) => {
-						response.then(val => resolve(val), val => reject(val));
+						response.set(_getSnapshot()).then(val => resolve(val), val => reject(val));
 					});
 
 					return retPromise;

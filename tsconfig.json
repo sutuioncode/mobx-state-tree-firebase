@@ -1,13 +1,19 @@
 {
 	"compilerOptions": {
 		/* Basic Options */
-		"lib": ["es2015"],
-		"target":
-			"ES5" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'. */,
-		"module":
-			"commonjs" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */ /* Specify module code generation: 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+		"lib": ["ES2016"],
+		"target": "ES6" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'. */,
+		"module": "commonjs" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */ /* Specify module code generation: 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
 		"declaration": true /* Concatenate and emit output to single file. */ /* Generates corresponding '.d.ts' file. */,
-		"outDir": "./dist" /* Redirect output structure to the directory. */
-		// "strict": true /* Enable all strict type-checking options. */
-	}
+		"outDir": "./dist", /* Redirect output structure to the directory. */
+		//"strict": true /* Enable all strict type-checking options. */
+		"skipLibCheck": true
+	},
+	"files": [
+		"index.ts",
+		//"node_modules/typescript/lib/lib.es6.d.ts"
+	  ],
+	"exclude": [
+		"node_modules/"
+	  ]
 }
