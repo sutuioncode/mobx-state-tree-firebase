@@ -13,21 +13,22 @@
 		"type": "git",
 		"url": "git+https://github.com/GeekyAnts/mobx-state-tree-firebase.git"
 	},
-	"keywords": ["Firebase", "mobx-state-tree", "mobx"],
+	"keywords": [
+		"Firebase",
+		"mobx-state-tree",
+		"mobx"
+	],
 	"author": "sanketsahu@gmail.com",
 	"license": "Apache-2.0",
 	"bugs": {
 		"url": "https://github.com/GeekyAnts/mobx-state-tree-firebase/issues"
 	},
-	"peerDependencies": {
-		"firebase": "^4.5.0",
-		"mobx-state-tree": "^1.0.0"
-	},
 	"homepage": "https://github.com/GeekyAnts/mobx-state-tree-firebase#readme",
 	"dependencies": {
-		"firebase": "^4.5.0",
-		"mobx": "^3.3.1",
-		"mobx-state-tree": "^1.0.0",
-		"typescript": "^2.5.3"
+		"@react-native-firebase/app": "^8.4.0",
+		"@react-native-firebase/database": "^7.5.1",
+		"mobx": "^5.15.6",
+		"mobx-state-tree": "^3.17.2",
+		"typescript": "^4.0.2"
 	}
 }

@@ -1,4 +1,4 @@
-import * as firebase from "firebase";
+import {firebase} from "@react-native-firebase/database";
 import { types, getSnapshot, getType } from "mobx-state-tree";
 
 const database = firebase.database();
